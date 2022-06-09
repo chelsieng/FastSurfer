@@ -1,0 +1,130 @@
+Log file for fastsurfercnn eval.py
+Tue May 31 16:11:44 EDT 2022
+
+python3.6 eval.py --in_name /Users/chelsieng/Documents/Workspace/FastSurfer/dummy/mri/140_orig.nii.gz --out_name /Users/chelsieng/Documents/Workspace/FastSurfer/output/140/mri/aparc.DKTatlas+aseg.deep.mgz --conformed_name /Users/chelsieng/Documents/Workspace/FastSurfer/output/140/mri/orig.mgz --order 1 --network_sagittal_path /Users/chelsieng/Documents/Workspace/FastSurfer/checkpoints/Sagittal_Weights_FastSurferCNN/ckpts/Epoch_30_training_state.pkl --network_axial_path /Users/chelsieng/Documents/Workspace/FastSurfer/checkpoints/Axial_Weights_FastSurferCNN/ckpts/Epoch_30_training_state.pkl --network_coronal_path /Users/chelsieng/Documents/Workspace/FastSurfer/checkpoints/Coronal_Weights_FastSurferCNN/ckpts/Epoch_30_training_state.pkl --batch_size 8 --simple_run --run_viewagg_on check
+Reading volume /Users/chelsieng/Documents/Workspace/FastSurfer/dummy/mri/140_orig.nii.gz
+The input image is not conformed.
+A conformed image must satisfy the following criteria:
+ - Dimensions 256x256x256:        True
+ - Voxel size 1x1x1:              True
+ - Orientation LIA:               True
+ - Dtype uint8:                   False
+Conforming image to UCHAR, RAS orientation, and 1mm isotropic voxels
+
+Input:    min: 0.0  max: 253.0
+rescale:  min: 0.0  max: 247.687  scale: 1.0295251668436374
+Saving conformed original image to /Users/chelsieng/Documents/Workspace/FastSurfer/output/140/mri/orig.mgz
+Cuda available: False, # Available GPUS: 0, Cuda user disabled (--no_cuda flag): False, --> Using device: cpu
+Loading Axial
+Successfully loaded Image from /Users/chelsieng/Documents/Workspace/FastSurfer/dummy/mri/140_orig.nii.gz
+Loading Axial Net from /Users/chelsieng/Documents/Workspace/FastSurfer/checkpoints/Axial_Weights_FastSurferCNN/ckpts/Epoch_30_training_state.pkl
+Axial model loaded.
+--->Batch 0 Axial Testing Done.
+--->Batch 1 Axial Testing Done.
+--->Batch 2 Axial Testing Done.
+--->Batch 3 Axial Testing Done.
+--->Batch 4 Axial Testing Done.
+--->Batch 5 Axial Testing Done.
+--->Batch 6 Axial Testing Done.
+--->Batch 7 Axial Testing Done.
+--->Batch 8 Axial Testing Done.
+--->Batch 9 Axial Testing Done.
+--->Batch 10 Axial Testing Done.
+--->Batch 11 Axial Testing Done.
+--->Batch 12 Axial Testing Done.
+--->Batch 13 Axial Testing Done.
+--->Batch 14 Axial Testing Done.
+--->Batch 15 Axial Testing Done.
+--->Batch 16 Axial Testing Done.
+--->Batch 17 Axial Testing Done.
+--->Batch 18 Axial Testing Done.
+--->Batch 19 Axial Testing Done.
+--->Batch 20 Axial Testing Done.
+--->Batch 21 Axial Testing Done.
+--->Batch 22 Axial Testing Done.
+--->Batch 23 Axial Testing Done.
+--->Batch 24 Axial Testing Done.
+--->Batch 25 Axial Testing Done.
+--->Batch 26 Axial Testing Done.
+--->Batch 27 Axial Testing Done.
+--->Batch 28 Axial Testing Done.
+--->Batch 29 Axial Testing Done.
+--->Batch 30 Axial Testing Done.
+--->Batch 31 Axial Testing Done.
+Axial View Tested in 886.7386 seconds
+Loading Coronal.
+Successfully loaded Image from /Users/chelsieng/Documents/Workspace/FastSurfer/dummy/mri/140_orig.nii.gz
+Loading Coronal Net from /Users/chelsieng/Documents/Workspace/FastSurfer/checkpoints/Coronal_Weights_FastSurferCNN/ckpts/Epoch_30_training_state.pkl
+Coronal model loaded.
+--->Batch 0 Coronal Testing Done.
+--->Batch 1 Coronal Testing Done.
+--->Batch 2 Coronal Testing Done.
+--->Batch 3 Coronal Testing Done.
+--->Batch 4 Coronal Testing Done.
+--->Batch 5 Coronal Testing Done.
+--->Batch 6 Coronal Testing Done.
+--->Batch 7 Coronal Testing Done.
+--->Batch 8 Coronal Testing Done.
+--->Batch 9 Coronal Testing Done.
+--->Batch 10 Coronal Testing Done.
+--->Batch 11 Coronal Testing Done.
+--->Batch 12 Coronal Testing Done.
+--->Batch 13 Coronal Testing Done.
+--->Batch 14 Coronal Testing Done.
+--->Batch 15 Coronal Testing Done.
+--->Batch 16 Coronal Testing Done.
+--->Batch 17 Coronal Testing Done.
+--->Batch 18 Coronal Testing Done.
+--->Batch 19 Coronal Testing Done.
+--->Batch 20 Coronal Testing Done.
+--->Batch 21 Coronal Testing Done.
+--->Batch 22 Coronal Testing Done.
+--->Batch 23 Coronal Testing Done.
+--->Batch 24 Coronal Testing Done.
+--->Batch 25 Coronal Testing Done.
+--->Batch 26 Coronal Testing Done.
+--->Batch 27 Coronal Testing Done.
+--->Batch 28 Coronal Testing Done.
+--->Batch 29 Coronal Testing Done.
+--->Batch 30 Coronal Testing Done.
+--->Batch 31 Coronal Testing Done.
+Coronal View Tested in 904.6466 seconds
+Loading Sagittal
+Successfully loaded Image from /Users/chelsieng/Documents/Workspace/FastSurfer/dummy/mri/140_orig.nii.gz
+Loading Sagittal Net from /Users/chelsieng/Documents/Workspace/FastSurfer/checkpoints/Sagittal_Weights_FastSurferCNN/ckpts/Epoch_30_training_state.pkl
+Sagittal model loaded.
+--->Batch 0 Sagittal Testing Done.
+--->Batch 1 Sagittal Testing Done.
+--->Batch 2 Sagittal Testing Done.
+--->Batch 3 Sagittal Testing Done.
+--->Batch 4 Sagittal Testing Done.
+--->Batch 5 Sagittal Testing Done.
+--->Batch 6 Sagittal Testing Done.
+--->Batch 7 Sagittal Testing Done.
+--->Batch 8 Sagittal Testing Done.
+--->Batch 9 Sagittal Testing Done.
+--->Batch 10 Sagittal Testing Done.
+--->Batch 11 Sagittal Testing Done.
+--->Batch 12 Sagittal Testing Done.
+--->Batch 13 Sagittal Testing Done.
+--->Batch 14 Sagittal Testing Done.
+--->Batch 15 Sagittal Testing Done.
+--->Batch 16 Sagittal Testing Done.
+--->Batch 17 Sagittal Testing Done.
+--->Batch 18 Sagittal Testing Done.
+--->Batch 19 Sagittal Testing Done.
+--->Batch 20 Sagittal Testing Done.
+--->Batch 21 Sagittal Testing Done.
+--->Batch 22 Sagittal Testing Done.
+--->Batch 23 Sagittal Testing Done.
+--->Batch 24 Sagittal Testing Done.
+--->Batch 25 Sagittal Testing Done.
+--->Batch 26 Sagittal Testing Done.
+--->Batch 27 Sagittal Testing Done.
+--->Batch 28 Sagittal Testing Done.
+--->Batch 29 Sagittal Testing Done.
+--->Batch 30 Sagittal Testing Done.
+--->Batch 31 Sagittal Testing Done.
+Sagittal View Tested in 898.9456 seconds
+Saving Segmentation to /Users/chelsieng/Documents/Workspace/FastSurfer/output/140/mri/aparc.DKTatlas+aseg.deep.mgz
+Total processing time: 2703.6057 seconds.
