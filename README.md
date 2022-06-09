@@ -3,7 +3,7 @@ This forked repository belongs entirely to [Deep-MI](https://github.com/Deep-MI/
 
 The goal here is to study the variability of FastSurferCNN when introducing perturbations with [Fuzzy](https://github.com/verificarlo/fuzzy).
 
-More details are available in this [report](https://github.com/chelsieng/Fuzzy-FastSurferCNN/blob/stable/Report/MidtermReport.ipynb).
+More details are available in this [report](https://github.com/chelsieng/Fuzzy-FastSurferCNN/blob/stable/Report/ProjectReport.ipynb).
 
 <hr/>
 
