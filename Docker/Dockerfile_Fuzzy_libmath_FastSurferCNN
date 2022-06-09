@@ -1,0 +1,15 @@
+FROM verificarlo/fuzzy:latest as fuzzy
+
+# Your target image
+FROM fastsurfercnn:gpu
+
+# Copy libmath fuzzy environment from fuzzy image, for example
+RUN mkdir -p /opt/mca-libmath
+COPY --from=fuzzy /opt/mca-libmath/libmath.so /opt/mca-libmath/
+COPY --from=fuzzy /usr/local/lib/libinterflop* /usr/local/lib/
+
+# If you will also want to recompile more libraries with verificarlo, add these lines
+COPY --from=fuzzy /usr/local/bin/verificarlo* /usr/local/bin/
+COPY --from=fuzzy /usr/local/include/* /usr/local/include/
+
+ENV VFC_BACKENDS 'libinterflop_mca.so --precision-binary32=24 --precision-binary64=53 --mode=mca'

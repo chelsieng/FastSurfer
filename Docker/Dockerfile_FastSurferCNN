@@ -31,4 +31,4 @@ COPY ./checkpoints /FastSurferCNN/checkpoints/
 WORKDIR "/FastSurferCNN"
 
 ENTRYPOINT ["python3.6", "eval.py"]
-CMD ["--help"]
+#CMD ["--help"]
