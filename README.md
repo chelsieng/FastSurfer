@@ -1,3 +1,12 @@
+# 🤖 Fuzzy FastSurfer
+This forked repository belongs entirely to [Deep-MI](https://github.com/Deep-MI/FastSurfer). 
+
+The goal here is to study the variability of FastSurferCNN when introducing perturbations with [Fuzzy](https://github.com/verificarlo/fuzzy).
+
+More details are available in this [report]().
+
+<hr/>
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Deep-MI/FastSurfer/blob/master/Tutorial/Tutorial_FastSurferCNN_QuickSeg.ipynb)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Deep-MI/FastSurfer/blob/master/Tutorial/Complete_FastSurfer_Tutorial.ipynb)
 
