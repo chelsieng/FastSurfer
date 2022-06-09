@@ -1,0 +1,11 @@
+{
+  "AcquisitionDateTime": "2017-07-17T17:47:00.091000",
+  "EchoTime": 0.562,
+  "FlipAngle": 120,
+  "ImageType": ["ORIGINAL","PRIMARY","M","ND","NORM"],
+  "MagneticFieldStrength": 3,
+  "Manufacturer": "Siemens",
+  "ManufacturersModelName": "Prisma",
+  "PhaseEncodingDirection": "i-",
+  "RepetitionTime": 3.2
+}
