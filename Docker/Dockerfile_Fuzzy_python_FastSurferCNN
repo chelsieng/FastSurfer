@@ -1,3 +1,9 @@
+#
+# This image is faulty as there is no fuzzy environment. It
+# uses the python interpreter installed through miniconda
+# in the FastSurferCNN image.
+#
+
 FROM fuzzy:python3.6.15 as fuzzy
 
 # Your target image

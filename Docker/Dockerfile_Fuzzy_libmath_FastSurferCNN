@@ -1,3 +1,9 @@
+#
+# This image is faulty as there is no fuzzy environment. It
+# uses the python interpreter installed through miniconda
+# in the FastSurferCNN image.
+#
+
 FROM verificarlo/fuzzy:latest as fuzzy
 
 # Your target image
