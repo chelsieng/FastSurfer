@@ -1,0 +1,20 @@
+FROM verificarlo/fuzzy-python:ubuntu18.04
+ARG PYTHON_VERSION=3.6
+
+# Install custom libraries
+RUN apt-get update && apt-get install -y --no-install-recommends \
+         git \
+         wget && \
+         rm -rf /var/lib/apt/lists/*
+
+# Install needed python packages (for FastSurferCNN)
+COPY requirements.txt /opt/
+RUN python$PYTHON_VERSION -m pip install --upgrade pip
+RUN python$PYTHON_VERSION -m pip install -r /opt/requirements.txt
+
+# Add FastSurfer (copy application code) to docker image
+COPY ./FastSurferCNN /FastSurferCNN/
+COPY ./checkpoints /FastSurferCNN/checkpoints/
+WORKDIR "/FastSurferCNN"
+
+ENTRYPOINT ["python3.6", "eval.py"]
